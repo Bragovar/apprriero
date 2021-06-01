@@ -1,0 +1,211 @@
+*{
+margin:0;
+padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.content{
+    width: 100%;
+    height: 100px;
+    background-color:black;
+    border: top 1px;px solid rgb(0,0,0,0.1) ;
+    position:fixed;
+    font-family: 'Mate SC', serif;
+   
+}
+.menu{
+/* margin-top:50px; */
+width: 30%;
+height: 200px;
+background-color: #999b84;
+font-family: 'Mate SC', serif;
+/* float: left; */
+
+
+margin-left: -70%;
+
+}
+.menu ul>li{
+    background-color: #4c6b70;
+    text-align: center;
+    list-style: none;
+}
+.menu ul>li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(33, 156, 84, 0.4);
+}
+.menu ul>li a:hover{
+    
+    background-color: rgba(60, 235, 16, 0.4);
+}
+#check-menu{
+    display: none;
+}
+#check-menu:checked ~ .menu{
+    margin-left: 0%;
+    transition: 2s all;    
+}
+label>img{
+    width: 40px;
+}
+.label>img:hover{
+    width: 40px;
+    background-color: white;
+    transition: 2s all;
+}
+.card-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.mundodeportivo.com/r/GODO/MD/p8/ContraPortada/Imagenes/2021/03/24/Recortada/img_lhernandez_20210324-171405_imagenes_md_otras_fuentes_overhead-shot-of-different-fresh-vegetables-put-together-on-black-background-k8MI-U492912405163UcG-980x554@MundoDeportivo-Web.jpg);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:300px 0px 0px 0px
+}
+
+.tema{
+    margin-left: 10% ;
+    padding: 20px;
+    font-size: 16px;
+    background-color: rgb(0,0,0,0.5);
+    width: 70%;
+    color: white;
+    border-radius: 30px 0px 30px 0px;
+}
+    
+.card-2{
+    width: 100%;
+    height: 200vh;
+    background-image: url(https://www.mundodeportivo.com/r/GODO/MD/p8/ContraPortada/Imagenes/2021/03/24/Recortada/img_lhernandez_20210324-171405_imagenes_md_otras_fuentes_overhead-shot-of-different-fresh-vegetables-put-together-on-black-background-k8MI-U492912405163UcG-980x554@MundoDeportivo-Web.jpg);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:300px 0px 0px 0px
+}
+.card-3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.cdc.gov/foodsafety/images/comms/features/GettyImages-1247930626-500px.jpg);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:300px 0px 0px 0px;
+}
+.card-4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.lavanguardia.com/uploads/2019/06/04/5e99794702a16.jpeg);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:300px 0px 0px 0px;
+}
+.float1{
+ float: left;
+
+}
+.float2{
+    float: right;
+   
+   }
+   
+p{
+    
+    background-color: rgb(86, 95, 85);
+}  
+p~p{
+    
+    background-color: aquamarine;
+    /* margin-top: 20px; */
+}
+p~p+p{
+
+    background-color: rgb(47, 145, 34); 
+}
+
+.position{
+    /* width: 200px; */
+    background-color: rgba(0, 0, 0, 0.007);
+    
+    position: fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    margin: auto;
+    padding: 180px 100px 100px 100px;
+    color: white;
+    font-size: 1.3rem;
+   
+    /*  background-image: url(https://universoabierto.com/wp-content/uploads/2020/11/1-2-1024x1024.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px  ;
+    border:1px solid white;
+    padding: 20px;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    
+    padding:300px 0px 0px 0px */
+}
+#pop:checked ~.position{
+    display: none;
+}
+#pop:checked ~label{
+    display: none;
+}
+label>img{
+    width: 25px;
+    position: fixed;
+    top:10px;
+    background-color: white;
+    left:90%;
+    z-index: 10;
+    cursor: pointer;
+}
+#pop{
+    display: none;
+}
+@media screen and (min-width:768px){
+    body{
+        background-color: rgb(76, 107, 112);
+    }
+
+    .menu{
+        /* margin-top:50px; */
+        width: 60%;
+        height: 30px;
+        background-color: rgba(145, 156, 15, 0);
+        float: right;
+        padding-top: 20px;
+        margin-left: 0%;
+        
+        }
+        .menu ul>li{
+            float: left;
+            /* background-color: #4c6b70; */
+            text-align: center;
+            list-style: none;
+        }
+        #check-menu:checked ~ .menu{
+            margin-left: 0%;
+            transition: 0s all;    
+        }
+        .menu ul>li{
+            background-color: rgba(76, 107, 112, 01);
+            text-align: center;
+            list-style: none;
+        }
+        .label{
+            display: none;
+        }
+    
+}
